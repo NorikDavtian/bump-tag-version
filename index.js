@@ -9,9 +9,13 @@ const jsonfile = require('jsonfile');
 
 const argv = minimist(process.argv.slice(2));
 const path = argv['path'] ? argv['path'] : 'package.json';
-const git = simpleGit(process.cwd()).outputHandler(gitHandler);
 const file = `${process.cwd()}/${path}`;
 var package = jsonfile.readFileSync(file);
+const git = simpleGit(process.cwd())
+  .outputHandler(function (cmd, stdout, stderr) {
+    stdout.pipe(process.stdout);
+    stderr.pipe(process.stderr);
+  });
 
 function error(msg) {
   console.log(chalk.red(`Error: ${msg}`));
@@ -27,10 +31,6 @@ function missingType() {
   process.exit(1);
 }
 
-function gitHandler(cmd, stdout, stderr) {
-  stdout.pipe(process.stdout);
-  stderr.pipe(process.stderr);
-}
 
 function bump(type, label) {
   const oldVersion = package.version;
