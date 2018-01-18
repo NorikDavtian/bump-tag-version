@@ -10,6 +10,6 @@ deploy:
   api_key:
     secure: HcZ8tmdqtq48XTrqtt0gRSJqHT2GIaL1ZJerDFUR266MOBiFLT8lUvyAIMq6O9aWsnyVzyA8bGf+ifoqU/wEQALAd0O9iEE46L9BfM51uquDDFH0UbYjhM8FphBh0qQKRfW+yK5QcZS59cl7c/ou8un6UE47yDHtGoL2AyjlVoIGcV0Vjv0ZUOBXACkvLdEFm7VHI0uwGfjHFnDIFNNR3LWucHHbJt2irq3sgkYgvV2yfPb0jxjphMxXNXMMAQ0LmmB6Truw9xDd6iVBPpMvRsxW5sZqU0koTznZis4iCDwYc5+XLswoMgC8Yq6YvT7i/y6VWf0Ue8tZthf8BnxbCqCs5kARMifvW7E/qUbJZDykgB2K4FNdEZnvQJGprZVKvPuGPsybwsxIqs00jCniEAgbG/xvjNkloGjS7imHEiHTHCtfQu79S3CLCd2wHAhwluaidDbDxF0kqKFkCGnwlVOOiQqlq0+3q/vTg9rkFJ56/+M1zdAEDtQta/QbLpLWW9N/xwXWHyyBFKrCjwzTn6HQPKBZUfJcvJQVvkkAH+P7uhB7NUaecUQRs1BzFl8myxUNN2Of/NFCyyhm3JZ+569Cex8UTbVIqeEBA0gGuOob5D3xMHse/Q6f1HaXGxDgwky2y7o57Tizz3XFXfU1CLLhCnVDQm2PoO/cO7YMn/I=
   on:
-    tags: true
+    branch: master
     repo: mpicard/bump-tag-version
 cache: yarn
