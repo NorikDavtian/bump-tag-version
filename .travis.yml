@@ -5,6 +5,7 @@ node_js:
   - 8
   - 9
 deploy:
+  tag: next
   provider: npm
   email: martin8768@gmail.com
   api_key:
