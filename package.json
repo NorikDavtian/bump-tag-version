@@ -1,6 +1,6 @@
 {
   "name": "bump-tag-version",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "CD tool for semver using git tags",
   "main": "index.js",
   "scripts": {
